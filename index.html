@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="theme.css" rel="stylesheet" /> 
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'>
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    
+</head>
+<body>
+    <div class="topnav", id = "myTopnav">
+      <a class="nohover" href="www.kimiaaccounting.com" id= "dont">
+         <img width="130px" height="80px"src="Logo.png" style="position:relative;top:-3px; padding-top: 5px">
+      </a>
+        <a href="#OurTeam" style="margin-top: 50px; float:right">Our Team</a>
+        <a href="#ContactUs" style="margin-top: 50px; float:right">Contact Us</a>
+        <a href="#OurClient" style="margin-top: 50px; float:right">Our Clients</a>
+        <a href="#Services" style="margin-top: 50px; float:right">Services</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="container-fluid bg-2 topBorder landrMargin">
+        <h3>professional consulting services, specializing in Sales and Payroll tax preparation to individuals and small businesses for over <span style="color: aqua;">20</span> years. </h3>
+    </div>
+    <div class="section group" id="Services">
+        <div class="col span_1_of_3 box">
+            <input onclick="bK()" type="image" class= "responsive" src="bookkeeping-icon-10T.jpg" />
+          <!-- <img class= "responsive" src="bookkeeping-icon-10T.jpg" style="position:relative;top:-3px "> -->
+           <h3>Bookkeeping</h3>
+        </div>
+        <div class="col span_1_of_3 box">
+            <input onclick="aC()" type="image" class= "responsive" src="accounting.png" />
+           <!-- <img class= "responsive" src="accounting.png" style="position:relative;top:-3px"> -->
+            <h3>Accounting</h3>
+            
+        </div>
+        <div class="col span_1_of_3 box">
+            <input onclick="aN()" type="image" class= "responsive" src="graphic.png" />
+            <!--<img class= "responsive" src="graphic.png" style="position:relative;top:-3px">-->
+            <h3>Consulting</h3>
+            
+        </div>
+    </div>
+    <div class="container-fluid bg-2 topBorder landrMargin coolBanner" id ="boxEffect">
+        <div class="section1 group1">
+            <div class="col1 span_1_of_2 reasons" style="color: white">
+                <ul class="dashed">
+                <li>
+                <h4 style="font-size: 30px">Top Four Reasons to Choose
+                    <br>Our Company</h4>
+                </li>
+                </ul>
+            </div>
+            <div class="col1 span_1_of_2">
+                <div class="boxContainer clearfix">
+                 <div class="box1 coolBannerU">
+                     <h4>01</h4>
+                     <h5> Prodessional </h5>
+                     <h6>With over 20 years<br> of experience, we <br> provide the best.</h6>
+                    </div>
+                 <div class="box1 coolBannerU">
+                    <h4>02</h4>
+                     <h5> Accurate </h5>
+                     <h6>Your sensetive data <br> will be calculated <br> with extreme care.</h6>
+                    </div>
+                 <div class="box1 coolBannerU">
+                    <h4>03</h4>
+                     <h5> Trusted </h5>
+                     <h6>Our clients praise us<br> for the perfect services <br> which they recived.</h6>
+                    </div>
+                 <div class="box1 coolBannerU">
+                    <h4>04</h4>
+                     <h5> Budget Friendly </h5>
+                     <h6>We offer exceptional <br> pricing for our quality <br> services.</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id ="curr" class="container carrSt" style="width: 100%;" >
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner myspan" style="text-align: center">
+      <div class="item active">
+        <h2> Professional </h2>
+        <h4>With over 20 years of experience, we provide the best.</h4>
+      </div>
+      <div class="item">
+        <h2> Accurate </h2>
+        <h4>Your sensetive data will be calculated with extreme care.</h4>
+      </div>
+      <div class="item">
+         <h2> Trusted </h2>
+         <h4>Our clients praise us for the perfect services which they recived.</h4>
+      </div>
+      <div class="item">
+         <h2> Budget Friendly </h2> 
+         <h4>We offer exceptional pricing for our quality services.</h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    </div>
+    <div class="modal flyerModal" id="myModal" role="dialog" displayed="false">
+              <div class="modal-content">
+                <span class="close" onclick="close1(); return false">&times;</span>
+                <h2>For More Information</h2>
+                <h4>Download our Flyer</h4>
+                <br>
+                <img src="Flyer.jpg" style="position:relative;top:-3px; width: 150px">
+                <br><br>
+                    <button class = "dlbtn" type="submit" onclick="window.open('Flyer.pdf')"><i class="fa fa-download"></i> Download</button>
+              </div>
+    </div>   
+    <div class="container" id="OurClient">
+       <div class="ckeditor">
+            <h2 style="text-align: center; font-size: 30px;">Our Clients</h2>
+            <p style="text-align: center; font-size: 18px; font-family: Cambria;">We provide services for clients in the Atlanta metro Area and beyond, companies and individuals across a wide swath of business sectors. We have been uccessful in obtaining a growing business presence by focusing on identifying specific client needs and delivering insights to optimize client business strategy. </p>
+        </div>
+         <style>
+            div.sc-overlay { display:none; }@media (min-width:880px){ul.select-clients li { position:relative; overflow:hidden; }div.sc-overlay { display:block; opacity:0; position:absolute; top:0; left:0; z-index:10; width:100%; height:220px; background:rgb(66,88,127); color:#fff; text-align:center; color:#fff; transition:0.3s linear all; }div.sco-table { width:200%; margin:0 0 0 -100%; display:table; }div.sco-cell { width:50%; display:table-cell; vertical-align:middle; }div.sco-cell img { width:100%; height:auto !important; opacity:0; }div.sco-cell p, div.sco-cell h2, div.sco-cell h3, div.sco-cell h4 { padding:0 20px; margin:0; }div.sco-cell a { color:#fff; }ul.select-clients li.sc-show:hover div.sc-overlay { opacity:1; }}
+        </style>
+                <ul class="select-clients">
+            <li class="sc-show">
+                <div class="sc-overlay">
+                    <div class="sco-table">
+                    <div class="sco-cell">
+                        <img src="NZP.png" alt="NZP">
+                    </div>
+                    <div class="sco-cell"><p>NZP is a multi branch company with activities in the fields of Food industry and Marketing.</p></div>
+                    </div>
+                </div>
+                <a href="https://www.Vietmart.us/" target="_blank"><img src="NZP.png" alt="NZP"></a>
+            </li>
+            <li class="sc-show">
+                <div class="sc-overlay"><div class="sco-table"><div class="sco-cell"><img src="LogoPrintTrans.png" alt="Etebar Acct"></div><div class="sco-cell"><p>Our Sister company which serves the clients with Taxation services</p></div></div></div>
+                <a href="https://www.etebarcpa.com/" target="_blank"><img src="Etebar.png" alt="Etebar Acct"></a>
+            </li>
+            <li class="sc-show">
+                <div class="sc-overlay"><div class="sco-table"><div class="sco-cell"><img src="NZP.png" alt="Emporio Rulli"></div><div class="sco-cell"><p>Anvat is an international Food and Sack company with three locations around the world.</p></div></div></div>
+                <a href="https://www.anvat.vietmart.us/" target="_blank"><img src="LogoPrintTrans.png" alt="Anvat"></a>
+            </li>
+             <li class="sc-show">
+                <div class="sc-overlay"><div class="sco-table"><div class="sco-cell"><img src="tek.png" alt="Emporio Rulli"></div><div class="sco-cell"><p>Professional Data Analytics company, serving its loyal customer with high quality analytical solution proposal.</p></div></div></div>
+                <a href="https://www.anvat.vietmart.us/" target="_blank"><img src="optimix.png" alt="Anvat"></a>
+            </li>
+            <li class="sc-show">
+                <div class="sc-overlay"><div class="sco-table"><div class="sco-cell"><img src="tek.png" alt="Emporio Rulli"></div><div class="sco-cell"><p>Brazilian Beauty Spa by Debora K. is a high-end spa designed with the most sophisticated body and facial protocols, combined with high technology and a touch of Brazil.</p></div></div></div>
+                <a href="https://www.anvat.vietmart.us/" target="_blank"><img src="Ber.png" alt="Anvat"></a>
+            </li>
+            <li class="sc-show">
+                <div class="sc-overlay"><div class="sco-table"><div class="sco-cell"><img src="tek.png" alt="Emporio Rulli"></div><div class="sco-cell"><p>Multi Branch Car Dealership with more than thousands customers covering West and East Atlanta.</p></div></div></div>
+                <a href="https://www.anvat.vietmart.us/" target="_blank"><img src="nesh.jpg" alt="Anvat"></a>
+            </li>
+        </ul>
+
+
+
+        <!--
+         <div class="brands col-md-4" style="margin-left: 0px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="brands_slider_container">
+                            <div class="owl-carousel owl-theme brands_slider">
+                                <div class="owl-item">
+                                    <div class="brands_item d-flex flex-column justify-content-center">
+                                        <img src="NZPRes.png" alt="">
+                                        </div>
+                                        </div>
+                                        <div class="owl-item">
+                                            <div class="brands_item d-flex flex-column justify-content-center">
+                                                <img src="optimixRes.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item">
+                                            <div class="brands_item d-flex flex-column justify-content-center">
+                                                <img src="BerRes.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item">
+                                            <div class="brands_item d-flex flex-column justify-content-center">
+                                                <img src="Etebar.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="owl-item">
+                                            <div class="brands_item d-flex flex-column justify-content-center">
+                                                <img src="nesh.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brands_nav brands_prev">
+                                        <i class="fas fa-chevron-left">
+                                        </i>
+                                    </div>
+                                    <div class="brands_nav brands_next">
+                                        <i class="fas fa-chevron-right">
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        -->
+    </div>
+    <div class="container-fluid bg-2 topBorder landrMargin" id="OurTeam"> 
+        <div class="containerIntro">
+          <div id="content1">
+              <h2>Kouros Peynabar</h2>
+              <p style="font-size: 14px; text-indent: 10em;">Founder & CEO</p>
+              <p style="text-indent:2em; line-height: 33px;">Accounting professional with a master of accounting from Georgia State University who has demonstrated expertise in cost accounting, project accounting, and management of general accounting functions include AP/AR/Treasury and fix asset.  Exceptional analytical ability and talent for managing multiple projects, consistently meeting deadlines.  Collaborate effectively with directors and managers to resolve variances, tighten spending to gain profit, and identify opportunities for improvement.  Tenacious problem solver, taking a proactive approach to drive better results.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic"  id="ContactUs">
+        <footer>
+            <div class="social"><a href="mailto:k.peynabar@kimiaaccounting.com"><i class="icon ion-email"></i></a><a href="tel:4702424113"><i class="icon ion-android-call"></i></a><a href="https://g.page/kimia-accounting-llc?share"><i class="icon ion-map"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="www.kimiaaccounting.com">Home</a></li>
+                <li class="list-inline-item"><a href="#Services">Services</a></li>
+                <li class="list-inline-item"><a href="#OurTeam">About</a></li>
+                <li class="list-inline-item"><a href="#OurClient">Clients</a></li>
+            </ul>
+            <p class="copyright">All right reserved by Kimia Accounting © 2020</p>
+            <p class="copyright">Designed by <a href="www.kurtpeynabard.com" style="color: maroon">Kurt Peynabard</a></p>
+        </footer>
+    </div>
+    <div id="BookkeepingModal" class="modal">
+              <div class="modal-content" >
+                <span class="close" onclick="close1();return false">&times;</span>
+                <ul class="a">
+                <li>
+                    <p>Bookkeeping & Reporting</p>
+                </li>
+                    <li>
+                    <p style="color: red; font-size: 30px; font-weight: 600">...</p>
+                </li>
+                <li>
+                    <p>Year-End & Monthly Closings</p>
+                </li>
+                 <li>
+                    <p style="color: red; font-size: 30px; font-weight: 600">...</p>
+                </li>
+                <li>
+                    <p>Cost & Financial Stament</p>
+                </li>
+                </ul>
+              </div>
+            </div>
+    <div id="AccountingModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="close1(); return false">&times;</span>
+                <ul class="a">
+                <li>
+                    <p>Sales Tax Calculation</p>
+                </li>
+                <li>
+                    <p style="color: red; font-size: 30px; font-weight: 600">...</p>
+                </li>
+                <li>
+                    <p>Payrol Tax Calculation</p>
+                </li>
+                </ul>
+              </div>
+            </div>
+    <div id="ConsultingModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="close1(); return false">&times;</span>
+                <ul class="a">
+                <li>
+                    <p>Tax & Revenue Projection</p>
+                </li>
+                <li>
+                    <p style="color: red; font-size: 30px; font-weight: 600">...</p>
+                </li>
+                <li>
+                    <p>Promotions Effect Prediction</p>
+                </li>
+                <li>
+                    <p style="color: red; font-size: 30px; font-weight: 600">...</p>
+                </li>    
+                <li>
+                    <p>Bottleneck Detection & Solution Proposal</p>
+                </li>
+                </ul>
+              </div>
+            </div>
+</body>
+</html>

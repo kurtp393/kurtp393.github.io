@@ -1,0 +1,685 @@
+/* Main Func */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  background: #ffffff;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 0px;
+  text-align: center;
+  background: white;
+}
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    margin: -19px 0px 0px 0px;
+    padding: 0px;
+    font-family: Cambria;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: white;
+    
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+  text-decoration: none;
+    
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  font-weight: 550;
+  color: black;
+  border-top: 0px;
+  text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform .4s;
+}
+
+.topnav a.active {
+  text-decoration: underline;
+  font-weight: 550;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* Create two unequal columns that floats next to each other */
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 2px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a:nth-child(first-child) {float: left;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: rgb(66,88,127);
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive1 {position: relative;}
+  .topnav.responsive1 .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive1 a:not(:first-child) {
+    float: right;
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+}
+
+/*Services Grids*/         
+.box {
+        background-color: white;
+        color: #000;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        text-align: center;
+        box-shadow: 2px black;
+      }      
+
+.box h3 {
+        background-color: white;
+        color: rgb(66,88,127);
+        font-size: 150%;
+        text-align: center;
+        font-family: Cambria;
+        
+      }
+.responsive1 {
+  align-content: right;
+  max-width: 1200px;
+  height: auto;
+}
+
+.responsive {
+  max-width: 80px;
+  height: auto;
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 30px 40px 30px 40px;
+	margin: 0px;
+    background-color: rgb(225,225,225,0.3);
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+    padding: 20px;
+    text-align: center;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+          
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 740px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+    .box {
+        background-color: white;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 25px;
+        font-size: 150%;
+        text-align: center;
+        margin: 50%;
+    }
+    .col {
+        display: block;
+        float:left;
+        margin: 1% 1% 6% 1%;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+
+/*  SECTIONS  */
+.section1 {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col1 {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+    padding: 20px 0px 20px 10px;
+}
+.col1:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group1:before,
+.group1:after { content:""; display:table; }
+.group1:after { clear:both;}
+.group1 { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 597) {
+	.col1 { 
+		margin: 1% 0 1% 0%;
+	}
+    .reasons {
+        text-align: center;
+        float: center;
+    }
+    .box1{
+        float: center;
+        min-height: inherit;
+        width: 100%;
+        display: inline;
+        margin-right: 0;
+    }
+    .boxContainer{
+        float: left;
+        width: 50%;
+        height: auto;
+
+   }
+    .coolBannerU h6{
+      font-size: 10px;
+      color: white;
+      text-align: center;
+      line-height: 1.5;
+    }
+}
+
+@media only screen and (max-width: 925px){
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+    .reasons {
+        text-align: center;
+        float: center;
+        font-size: 10px;
+       }
+    .topBorder h3 {
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .container-fluid {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+    }
+}
+
+
+.landrMargin {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.container-fluid {
+padding-top: 70px;
+padding-bottom: 70px;
+}
+
+.bg-2 { 
+background-color: rgb(66,88,127);
+color: #000;
+}
+
+.topBorder h3 {
+    color: white;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+    padding-top: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Cambria;
+}
+
+.coolBanner {
+    background-image: url(https://bldemo-ba0e.kxcdn.com/wp-content/uploads/sites/33/2017/06/dotted-bg-light.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: rgb(66,88,127);
+}
+
+ul {
+  margin: 0;
+}
+ul.dashed {
+  list-style-type: none;
+}
+ul.dashed > li {
+  text-indent: -5px;
+}
+ul.dashed > li:before {
+  content: "____";
+  text-indent: -5px;
+  font-size: 30px;
+  color: red;
+}
+.boxContainer{
+    width: 500px;
+    height: auto;
+    
+}
+.box1{
+    float: left;
+    min-height: 150px;
+    width: 100;
+    display: block;
+    padding: 5px;
+    margin-right: 40px;
+}
+/* I would put this at the top of the page, and minimise the newlines :) if you want to remove the "." (dot) then use this  content: "\00A0"; which puts a whitespace,  */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inherit;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+.coolBannerU h4{
+  font-size: 40px;
+  color: white;
+  text-decoration-color: red;
+  text-decoration-line: underline;
+  text-underline-offset: 0.2em;
+  
+}
+.coolBannerU h5{
+  font-size: 30px;
+  color: white;
+  
+}
+.coolBannerU h6{
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  line-height: 1.5;
+}
+
+ul.select-clients { list-style-type:none; padding:0; text-align:center; }
+ul.select-clients li { width:47%; display:inline-block; margin:0 2px 10px 2px; padding:20px; text-align:center; background:#f2f2f2; }
+ul.select-clients li img { display:block; width:100%; height:100%; object-fit:contain; }
+
+ul.select-clients li { width:23.75%; margin:0 0.5% 10px 0.5%; height:220px; }
+
+.ckeditor { }
+.ckeditor h2 { color:rgb(66,88,127); font-size:1.6em; }
+.ckeditor h3 { font-weight:bold; font-size:1.3em; }
+.ckeditor h4, .ckeditor h5 { font-weight:bold; }
+
+.ckeditor ul { list-style-position: inside !important; }
+
+.ckeditor img { height:auto !important; }
+
+
+
+.containerIntro {
+  display: grid;
+  height: auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: .2fr;
+  grid-template-areas:
+    "sidebar content1";
+  grid-gap: 20rem;
+  font-weight: 200;
+  font-size: 20px;
+  color: rgb(66,88,127);
+  text-align: left;
+}
+
+#sidebar {
+  background: transparent;
+  grid-area: sidebar;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+}
+
+#content1 {
+  background: transparent;
+  color: white;
+  grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
+    font-family: Combria;
+}
+
+#responsive2 {
+  max-width: 600px;
+  height: auto;
+}
+
+@media only screen and (max-width: 1043px) {
+  .containerIntro {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "sidebar"
+      "content";
+    align-content: center;
+    grid-gap: 5rem;
+  }
+    #sidebar {
+      background: transparent;
+      grid-area: sidebar;
+      border-radius: var(--main-radius);
+      text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 613px) {
+    #responsive2 {
+        width: calc(100% - 0.0*2em );
+        height: auto;
+        align-content: center;
+    }
+    #boxEffect {
+        display: none;
+    }
+  
+    #curr{
+        display: block;
+    }
+    ul.a > li {
+        font-size: 18px;
+        margin-top: 10px;
+        align-content:space-between;
+    }
+}
+@media screen and (min-width: 614px) {
+    #curr {display: none};
+}
+
+modal {
+   /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,1); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(66,88,127);
+  background-image: url(hd-pattern-png-transparent-triangle-transparent-png-image-pattern-transparent-2048_1024.png);
+  margin:  10% auto ; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid rgb(66,88,127);
+  width: 50%; /* Could be more or less, depending on screen size */
+  text-align: center;
+  font-size: 30px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+ul.a {list-style-type: none;}
+ul.a > li {
+    color: white;
+    font-family: Cambria; 
+}
+
+
+
+.dlbtn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.dlbtn:hover {
+  background-color: RoyalBlue;
+}
+
+.flyerModal{
+    color: white;
+    font-family: Cambria;
+    text-align: center;
+}
+.carrSt {
+    background: rgb(66,88,127);
+    background-image: url(res.png);
+    background-repeat: no-repeat;
+    font-family: Cambria;
+    display: none;
+}
+.carrSt h2{
+    font-size: 30px;
+    color: white;
+}
+.carrSt h4{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 20px;
+    
+}
+.carousel-indicators li { visibility: hidden; }
+.right.carousel-control, .left.carousel-control {
+    display: none;
+}
+
+.myspan h2{
+    display:inline-block;
+    border-bottom:3px solid red;
+    padding-bottom:10px;
+}
+
+ .brands {
+     width: 100%;
+     padding-top: 90px;
+     padding-bottom: 90px
+ }
+
+ .brands_slider_container {
+     height: 130px;
+     border: solid 1px #e8e8e8;
+     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+     padding-left: 0px;
+     padding-right: 0px;
+     background: bisque;
+ }
+
+ .brands_slider {
+     height: 100%;
+     margin-top: 20px
+ }
+
+ .brands_item {
+     height: 100%
+ }
+
+ .brands_item img {
+     max-width: 60%
+ }
+
+ .brands_nav {
+     position: absolute;
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     -o-transform: translateY(-50%);
+     transform: translateY(-50%);
+     padding: 5px;
+     cursor: pointer
+ }
+
+ .brands_nav i {
+     color: #e5e5e5;
+     -webkit-transition: all 200ms ease;
+     -moz-transition: all 200ms ease;
+     -ms-transition: all 200ms ease;
+     -o-transition: all 200ms ease;
+     transition: all 200ms ease
+ }
+
+ .brands_nav:hover i {
+     color: #676767
+ }
+
+ .brands_prev {
+     left: 40px
+ }
+
+ .brands_next {
+     right: 40px
+ }
+ .coust_count {
+     background: white;
+     margin: 5px;
+     width: 100%;
+     height: 200px;
+ }
