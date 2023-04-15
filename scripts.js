@@ -49,13 +49,13 @@ window.onclick = function(event) {
     }
     
 
-window.onscroll = function() {
-       if ($(document).scrollTop() > 400 && document.getElementById('myModal').getAttribute("displayed")
-=== "false") {
-         document.getElementById('myModal').style.display = "block";
-         document.getElementById("myModal").setAttribute("displayed", "true");
-       }
-     };
+// window.onscroll = function() {
+//        if ($(document).scrollTop() > 400 && document.getElementById('myModal').getAttribute("displayed")
+// === "false") {
+//          document.getElementById('myModal').style.display = "block";
+//          document.getElementById("myModal").setAttribute("displayed", "true");
+//        }
+//      };
 
 
 
@@ -98,3 +98,40 @@ $(document).ready(function(){
 
 
     });
+
+    // $( window ).unload(function() {
+    //   document.getElementById('myModal').style.display = "block";
+    //   document.getElementById("myModal").setAttribute("displayed", "true");
+    // });
+
+  //   $("html").bind("mouseleave", function () {
+  //     document.getElementById('myModal').style.display = "block";
+  //     document.getElementById("myModal").setAttribute("displayed", "true");
+
+  //     $("html").unbind("mouseleave");
+  // });
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+
+function menue_pop() {
+  console.log('cliked');
+  document.getElementById('exampleModal').style = 'display: block;'
+  $('#exampleModal').modal('show')
+  
+}
